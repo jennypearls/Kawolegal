@@ -10,10 +10,16 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    <style type="text/css">
 
-   body{
-    background: #fff;
-    color: #333;
-   }
+
+    html{
+  position:relative; 
+  min-height: 100%;
+}
+/*Normalize html and body elements,this style is just good to have*/
+html,body{
+  margin:0;
+  padding:0;
+} 
     
     .navbar {
         margin-bottom: 0;
@@ -117,14 +123,17 @@ ul.social-icons li a:hover{
   height: 625px;}
 
 
-footer {
+.footer {
+
   position: absolute;
-  left: 0;
   bottom: 0;
+  right: 0;
+  left: 0;
+  clear: both;
   width: 100%;
   background-color: rgba(59, 12, 12);
   color: white;
-  text-align: center
+  text-align: center;
    margin-top: 30px;
    height: 8%;}
 
@@ -206,7 +215,7 @@ ul.social-icons li {
       <button type="submit" class="btn btn-primary">sign-up</button>
   </form>
 
-   <footer>
+   <footer class="footer">
    <div class="container" >
      <div class="row">
         <div class="col-md-3">

@@ -1,3 +1,4 @@
+
 <!DOCTYPE  html>
 <html lang="en">
   <head>
@@ -10,15 +11,16 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">   
 <style>
 
-html {
-  height: 100%;
+html{
+  position:relative; 
+  min-height: 100%;
 }
- body {
-  
-  padding: 0;
-  margin: 0;
-   
+/*Normalize html and body elements,this style is just good to have*/
+html,body{
+  margin:0;
+  padding:0;
 }
+
 
  .navbar {
        margin-bottom: 0;
@@ -102,17 +104,25 @@ ul.social-icons li a:hover{
 }
 
 
+.footer {
 
-footer {
-  position: relative;
-  left: 0;
+  position: absolute;
+  padding:0;
   bottom: 0;
+  right: 0;
+  left: 0;
+  clear: both;
   width: 100%;
   background-color: rgba(59, 12, 12);
   color: white;
   text-align: center;
    margin-top: 30px;
-   height: 8%;}
+   height: 8%;
+   overflow: hidden;
+ }
+
+
+
 
 ul.social-icons li a{
   padding-right: 20px;
@@ -205,33 +215,25 @@ ul.social-icons li {
 
    
       
- <!--
+ 
  <div class="container">
      <div class="row">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-6">
-           <H1><p class="X-large"><CENTER> KAWOLEGAL</CENTER></p></H1>
-           <h2>A collaborative ecosystem for problem <center>solvers and support for startups</center></h2>
-           <br>
-           <center><a href="#" class="btn btn-primary">Register Now!</a></center>
-          </div>
-          <div class="col-md-3">
-          </div>
-         
-     </div>
- </div>-->
+      <div class="col-md-12" style="border: 1px solid white;margin-top: 30px">
+       <h1 style="color:white;">I Jennifer left this space to get the little space in </h1>
+      <!--content here-->
+          
+ </div>
 
- <footer>
+ <footer class="footer">
    <div class="container" >
      <div class="row">
-        <div class="col-md-3 col-xs-3 col-sm-2 col-xs-2"  style="margin-top: 7px;">
+        <div class="col-md-3"  style="margin-top: 7px;">
         @2017 Kawolegal.All rights reserved
         </div>
-        <div class="col-md-6 col-xs-6 col-sm-2 col-xs-8" >
+        <div class="col-md-6" >
 
         </div>
-        <div class="col-md-3 col-xs-3 col-sm-8 col-xl-2" >
+        <div class="col-md-3" >
           <ul class="list-inline social-icons" >
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
