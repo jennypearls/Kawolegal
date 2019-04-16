@@ -14,11 +14,14 @@
     html{
   position:relative; 
   min-height: 100%;
+  
 }
 /*Normalize html and body elements,this style is just good to have*/
-html,body{
+body{
   margin:0;
-  padding:0;
+  
+  padding-bottom:140px;
+
 } 
     
     .navbar {
@@ -124,7 +127,9 @@ ul.social-icons li a:hover{
 
 
 .footer {
-position: absolute;
+
+  
+  position: fixed;
   padding:0;
   bottom: 0;
   right: 0;
@@ -135,8 +140,9 @@ position: absolute;
   color: white;
   text-align: center;
    margin-top: 30px;
-   height: 8%;
+   height: 60px;
    overflow: hidden;
+
  }
 
 ul.social-icons li a{
@@ -220,7 +226,7 @@ ul.social-icons li {
    <footer class="footer">
    <div class="container" >
      <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" style="margin-top: 7px;">
         @2017 Kawolegal.All rights reserved
         </div>
         <div class="col-md-6" >
